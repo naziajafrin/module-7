@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transition</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 150px;
+            border: 2px solid rebeccapurple;
+            /* transform: rotate(45deg); */
+            transition: width 5s, height 10s,  transform 5s;
+        }
+        .box:hover{
+            width: 250px;
+            height: 250px;
+            background-color: aquamarine;
+            transform: rotate(45deg);
+            /* transition: width 5s, height 10s,  transform 5s; */
+            /* transition: width 5s ease-in-out, height 10s; */
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Transition</h1>
+    <div class="box">
+        <h3>transition</h3>
+    </div>
 </body>
 </html>
