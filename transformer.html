@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Transformer</title>
+    <style>
+        .container, .inner{
+            height: 100px;
+            width: 100px;
+            border: 2px dotted mediumpurple;
+            
+        }
+        .container{
+            background-color: lightpink;
+        }
+        .inner{
+            background-color: lightblue;
+            transform: translate(50px, 50px) scale(.75) rotate(45deg);
+            /* transform: rotate(20deg); */
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Transformer</h1>
+    <div class="box container">
+        <div class="inner">box-1</div>
+    </div>
+    <div class="box container">
+        <div class="inner">box-2</div>
+    </div>
+    <div class="box container">
+        <div class="inner">box-3</div>
+    </div>
+
 </body>
 </html>
