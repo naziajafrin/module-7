@@ -4,8 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cricket</title>
+    <style>
+        .field{
+            border: 1px dotted;
+        }
+        .field:hover .bat{
+            transform: rotate(-45deg);
+            transform-origin: top right ;
+        }
+        .bat{
+            transition: transform .75s ease-in-out;
+        }
+        /* .bat:hover{
+            transform: rotate(-45deg);
+            transform-origin: top right ;
+        } */
+
+        .ball{
+            height: 25px;
+            width: 25px;
+            background-color: brown;
+            border-radius: 15px;
+            position: relative;
+            left: 402px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="field">
+        <img class="bat" src="images/bat.png" alt="">
+    </div>
+    <div class="ball"></div>
 </body>
 </html>
